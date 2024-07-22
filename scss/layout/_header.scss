@@ -1,0 +1,167 @@
+header {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.title {
+  color: #fff;
+  text-align: center;
+}
+
+.line {
+  height: 2px;
+  width: 1258px;
+  background-color: #fff;
+  margin: 30px 0;
+}
+
+
+
+.list {
+  display: flex;
+  color: #fff;
+  width: 441px;
+  margin: 0 auto;
+  gap: 80px;
+  align-items: center;
+
+  h3 {
+    font-size: 20px;
+    width: 190px;
+  }
+
+  .dropdown {
+    width: 200px;
+    height: 50px;
+    border-radius: 46px;
+    overflow: hidden;
+
+    &-btn {
+      width: 100%;
+      height: 100%;
+      font-size: 20px;
+      text-align: center;
+      color: #fff;
+      border-radius: 46px;
+      outline: none;
+      background: transparent;
+
+      option {
+        color: black;
+      }
+
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    background-color: #023926;
+    display: block;
+    padding: 20px;
+
+    .title {
+      font-size: 24px;
+    }
+
+    .line {
+      position: relative;
+      width: auto;
+      top: 130px;
+      z-index: 99;
+
+
+    }
+
+    .list {
+      background-color: #023926;
+      display: block;
+      position: relative;
+      width: auto;
+      height: 123px;
+      top: 20px;
+
+      h3 {
+        display: none;
+      }
+
+      .dropdown {
+        width: 100%;
+        position: relative;
+        top: 15px;
+
+        &-btn {
+          border-style: hidden;
+          overflow: hidden;
+
+          option {
+            color: #fff;
+            background-color: #00462B;
+          }
+        }
+      }
+    }
+
+  }
+
+  .sub-menu-date {
+    margin-left: 80px;
+    margin-top: 10px;
+
+    img {
+      display: none;
+    }
+
+    h3 {
+      position: relative;
+      display: flex;
+      gap: 20px;
+    }
+  }
+}
+
+
+@media (max-width: 430px) {
+  .sub-menu-date {
+    margin: 0;
+
+    img {
+      display: none;
+    }
+
+    h3 {
+      position: relative;
+      left: 50px;
+      top: 35px;
+      display: flex;
+      
+      gap: 20px;
+
+
+
+    }
+  }
+
+}
+
+
+
+@media (max-width: 360px) {
+
+  .sub-menu-date {
+
+
+    img {
+      display: none;
+    }
+
+    h3 {
+
+      display: flex;
+
+    }
+  }
+}

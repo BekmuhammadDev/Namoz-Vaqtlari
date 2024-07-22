@@ -1,0 +1,122 @@
+.main {
+    margin-top: 60px;
+
+    .sub-menu {
+        max-width: 1291px;
+        margin: 82px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+
+            #region {
+                color: yellow;
+            }
+        }
+
+        &-date {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+
+            h3 {
+                font-size: 24px;
+                font-weight: bold;
+                color: #fff;
+
+                #year {
+                    color: yellow;
+
+                }
+            }
+        }
+    }
+
+    .card-wrpper {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+    h2 {
+        display: none;
+    }
+
+
+    h3 {
+        position: relative;
+        top: 29px;
+        left: 150px;
+        place-content: center;
+
+    }
+
+    .card-wrpper {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+
+    }
+
+
+
+
+
+}
+
+@media (max-width: 430px) {
+    h2 {
+        display: none;
+    }
+
+
+
+    h3 {
+        position: relative;
+        top: 25px;
+        right: 0;
+        left: 0;
+
+    }
+
+    .card-wrpper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+      
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    h2 {
+        display: none;
+    }
+
+
+
+    h3 {
+        position: relative;
+        top: 25px;
+        right: 0;
+        left: 0;
+
+    }
+
+    .card-wrpper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}

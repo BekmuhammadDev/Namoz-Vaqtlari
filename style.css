@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("../assets/img/bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.active {
+  border: 2px solid rgb(4, 0, 255);
+  background-color: rgba(11, 240, 99, 0.568627451) !important;
+}
+
+.exact-active {
+  background-color: #f7d599 !important;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url("../assets/img/resbody.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+  }
+}
+@media (max-width: 360px) {
+  body {
+    background-image: url("../assets/img/resbody.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 100vh;
+  }
+}
+.btn-warning, .btn-danger, .btn-success, .btn-primary {
+  padding: 8px 12px;
+  display: grid;
+  place-content: center;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  transition: all 0.2s linear;
+  box-shadow: 0 0 3px rgba(73, 73, 255, 0.563);
+  background-color: rgb(73, 73, 255);
+  margin: 8px;
+}
+
+.btn-warning:hover, .btn-danger:hover, .btn-success:hover, .btn-primary:hover {
+  background-color: rgba(73, 73, 255, 0.76);
+  color: #ebebeb;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.219);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  background-color: rgba(9, 243, 9, 0.507);
+}
+
+.card {
+  width: 250px;
+  height: 397px;
+  padding-top: 20px;
+}
+.card h4 {
+  color: yellow;
+  font-size: 2rem;
+}
+.card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 232px;
+  height: 232px;
+  margin-bottom: 12px;
+}
+.card h5 {
+  color: #fff;
+  font-size: 48px;
+}
+
+@media (max-width: 430px) {
+  .card {
+    background-color: #008653;
+    width: 168px;
+    height: 210px;
+    margin: 0;
+    gap: 0;
+  }
+  .card h4 {
+    font-size: 16px;
+  }
+  .card h5 {
+    font-size: 32px;
+  }
+  .card img {
+    width: 90px;
+    height: 127px;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 390px) {
+  .card {
+    background-color: #008653;
+    width: 168px;
+    height: 210px;
+    margin: 0;
+    gap: 0;
+  }
+  .card h4 {
+    font-size: 16px;
+  }
+  .card h5 {
+    font-size: 32px;
+  }
+  .card img {
+    width: 90px;
+    height: 127px;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 360px) {
+  .card {
+    background-color: #008653;
+    width: 120px;
+    height: 210px;
+  }
+  .card h4 {
+    font-size: 16px;
+  }
+  .card h5 {
+    font-size: 32px;
+  }
+  .card img {
+    width: 90px;
+    height: 127px;
+    margin-bottom: 0;
+  }
+}
+.btn-success {
+  background-color: teal;
+}
+
+.btn-danger {
+  background-color: crimson;
+}
+
+.btn-warning {
+  background-color: #ffd900;
+}
+
+.container {
+  max-width: 1698px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.title {
+  color: #fff;
+  text-align: center;
+}
+
+.line {
+  height: 2px;
+  width: 1258px;
+  background-color: #fff;
+  margin: 30px 0;
+}
+
+.list {
+  display: flex;
+  color: #fff;
+  width: 441px;
+  margin: 0 auto;
+  gap: 80px;
+  align-items: center;
+}
+.list h3 {
+  font-size: 20px;
+  width: 190px;
+}
+.list .dropdown {
+  width: 200px;
+  height: 50px;
+  border-radius: 46px;
+  overflow: hidden;
+}
+.list .dropdown-btn {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  border-radius: 46px;
+  outline: none;
+  background: transparent;
+}
+.list .dropdown-btn option {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  header {
+    background-color: #023926;
+    display: block;
+    padding: 20px;
+  }
+  header .title {
+    font-size: 24px;
+  }
+  header .line {
+    position: relative;
+    width: auto;
+    top: 130px;
+    z-index: 99;
+  }
+  header .list {
+    background-color: #023926;
+    display: block;
+    position: relative;
+    width: auto;
+    height: 123px;
+    top: 20px;
+  }
+  header .list h3 {
+    display: none;
+  }
+  header .list .dropdown {
+    width: 100%;
+    position: relative;
+    top: 15px;
+  }
+  header .list .dropdown-btn {
+    border-style: hidden;
+    overflow: hidden;
+  }
+  header .list .dropdown-btn option {
+    color: #fff;
+    background-color: #00462B;
+  }
+  .sub-menu-date {
+    margin-left: 80px;
+    margin-top: 10px;
+  }
+  .sub-menu-date img {
+    display: none;
+  }
+  .sub-menu-date h3 {
+    position: relative;
+    display: flex;
+    gap: 20px;
+  }
+}
+@media (max-width: 430px) {
+  .sub-menu-date {
+    margin: 0;
+  }
+  .sub-menu-date img {
+    display: none;
+  }
+  .sub-menu-date h3 {
+    position: relative;
+    left: 50px;
+    top: 35px;
+    display: flex;
+    gap: 20px;
+  }
+}
+@media (max-width: 360px) {
+  .sub-menu-date img {
+    display: none;
+  }
+  .sub-menu-date h3 {
+    display: flex;
+  }
+}
+.main {
+  margin-top: 60px;
+}
+.main .sub-menu {
+  max-width: 1291px;
+  margin: 82px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .sub-menu h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+.main .sub-menu h2 #region {
+  color: yellow;
+}
+.main .sub-menu-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.main .sub-menu-date h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+.main .sub-menu-date h3 #year {
+  color: yellow;
+}
+.main .card-wrpper {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    display: none;
+  }
+  h3 {
+    position: relative;
+    top: 29px;
+    left: 150px;
+    place-content: center;
+  }
+  .card-wrpper {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+}
+@media (max-width: 430px) {
+  h2 {
+    display: none;
+  }
+  h3 {
+    position: relative;
+    top: 25px;
+    right: 0;
+    left: 0;
+  }
+  .card-wrpper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0;
+  }
+}
+@media (max-width: 360px) {
+  h2 {
+    display: none;
+  }
+  h3 {
+    position: relative;
+    top: 25px;
+    right: 0;
+    left: 0;
+  }
+  .card-wrpper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

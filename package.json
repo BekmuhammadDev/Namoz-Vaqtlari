@@ -1,0 +1,22 @@
+{
+  "name": "namoz-vaqtlari",
+  "version": "1.0.0",
+  "description": "project",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path  scss./style.scss  ./css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-css": "nodemon -e scss/**/* -x \"npm run build-css\""
+  },
+  "keywords": [
+    "scss",
+    "js",
+    "html"
+  ],
+  "author": "Bekmuhammad",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.1.4"
+  }
+}

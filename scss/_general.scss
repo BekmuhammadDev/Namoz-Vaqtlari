@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("../assets/img/bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+
+
+.active {
+  border: 2px solid rgb(4, 0, 255);
+  background-color: #0bf06391 !important;
+}
+
+.exact-active {
+  background-color: #f7d599 !important;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    background-image: url("../assets/img/resbody.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+  }
+}
+
+
+@media (max-width: 360px) {
+  body {
+    background-image: url("../assets/img/resbody.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 100vh;
+  }
+
+}
